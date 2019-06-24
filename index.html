@@ -1,0 +1,391 @@
+<!doctype html>
+
+<!-- JavaScript to force HTTPS -->
+<script language="javascript">
+
+  if (document.location.protocol != "https:") {
+
+  document.location.href = "https://www.minnesports.com" + document.location.pathname;
+
+  };
+
+</script>
+
+
+<!-- JavaScript to let the navbar stay at the top of the page -->
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  
+  } else {
+  
+    navbar.classList.remove("sticky");
+  
+  }
+
+}
+
+</script>
+
+<!-- Link to CSS stylesheet -->
+<link href="styles/StyleSheet.css" rel="stylesheet" type="text/css">
+
+<!-- HTML -->
+<html id="Home" class="htmlBackground"> 
+
+<div class="align">
+
+  <!-- Navbar -->
+  <div class="navbar">
+  
+    <a class="btnPad" href="#Home">Home</a>
+  
+    <a class="btnPad" href="#Mission">Mission</a>
+  
+    <a class="btnPad" href="#Contact">Contact</a>
+  
+  </div>
+
+  <head>Welcome to Minnesports, Minnesota's only official E-Sports League</head>
+
+  <body>Our mission is to remain open to the public, unlike other E-Sports organizations which require sponsorships from academia or professional leagues. All people of any age are welcome at our bring-your-own-rig open registration tournaments. Winners of the open registration tournaments are invited to compete in the Annual Cup for a grand prize, trophy, and bragging rights.</body>
+
+  <!-- Background video -->
+  <div>
+
+    <div class="fullScreenBackground">
+      
+      <video loop muted autoplay poster="https://i.imgur.com/QEKiysV.png" class="fullScreenBackground__video">
+
+      <source src="https://giant.gfycat.com/FrequentPassionateBactrian.webm" type="video/webm">
+      
+      </video>
+
+    </div>
+
+    <div class="col-5">
+
+      <!-- Minnesports logo & motto -->
+        <img src="images/minnesportsblanc.png" class="logo"></img>
+
+        <br>
+
+        <img src="images/motto.png" class="motto"></img>
+
+    </div>
+
+    <!-- Registration form container -->
+    <div id="Register" class="col-5 addPadd">
+
+      <!-- Left side margin -->
+      <div class="col-1"></div>
+      
+      <!-- Registration form -->
+      <form class="col-2 opacity" method="post" action="registration/registration.php">
+
+        <!-- Description -->
+        <div class="textMod">
+          
+          <center>
+
+            <h2>
+                
+                Registration: Grand Opener, 2019<br><br>
+            
+            </h2>
+          
+          </center>
+        
+        </div>
+
+        <!-- Text field container -->
+        <div class="textMod bringForward">
+
+          <div class="col-4"></div>
+          <div class="col-3">
+          
+            <label class="">
+              <center>
+                Registration for the Grand Opener ends on July 31st, 2019.<br><br>By registering, you'll also join the Minnesports community and recieve notifications for events, new features, and a few occasional marketing emails.<br><br>
+              </center>
+            </label>
+          
+          </div>
+
+          <!-- First name -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+            <input type="text" name="firstName" class="col-3" id="getFirstName" placeholder="First Name" required="">
+
+            <div class="col-4"></div>
+          
+          </div>
+
+          <!-- Last name -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+            <input type="text" name="lastName" class="col-3" id="getLastName" placeholder="Last Name" required="">
+
+            <div class="col-4"></div>
+          
+          </div>
+          
+          <!-- Email -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+            <input type="email" name="email" class="col-3" id="getEmailAddress" placeholder="Email Address" required="">
+
+            <div class="col-4"></div>
+          
+          </div>
+
+          <!-- Spectating or competing? -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+              <p class="textMod bringForward">Do you wish to compete, or spectate?</p>
+          
+          </div>
+
+          <!-- Spectate or compete selector -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+              <select name="compOrSpec" required="required" class="col-3" id="areYouCompeting">
+
+                <option selected disabled value="">Compete or spectate?</option>
+
+                <option value="competing" name="">Competing</option>
+                
+                <option value="spectating" name="">Spectating</option>
+              
+              </select>
+          
+          </div>
+
+          <!-- Choose game -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+
+              <label class="textMod bringForward">If you're competing, which game(s)?</label><br>
+
+            <div class="col-4"></div>
+
+              <label class="textMod bringForward">(Select one or both)</label>
+          
+          </div>
+
+          <!-- Choose game checkboxes -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+
+              <input type="checkbox" name="rocketLeague" value="1"> Rocket League
+
+              <input class="chkBoxMargin" type="checkbox" name="overwatch" value="1"> Overwatch
+          
+          </div>
+
+          <!-- Date of birth -->
+          <div class="col-5">
+          
+              <div class="col-4"></div>
+
+              <label for="start">Date of birth:</label>
+          
+          </div>
+
+          <!-- Date of birth selector -->
+          <div class="col-5">
+
+              <input type="date" id="getAge" name="dob"
+                     value="Select date of birth"
+                     min="1900-01-01" max="2020-12-31" required="">
+
+            <div class="col-4"></div>
+          
+          </div>
+
+          <!-- Submit button -->
+          <div class="col-5">
+          
+            <div class="col-4"></div>
+          
+            <button type="submit" class="btn btn-default col-6">Submit</button>
+          
+          </div>
+
+        </div>
+      
+      </form>
+
+      <!-- Right side margin -->
+      <div class="col-1"></div>
+
+    </div>
+
+  </div>
+
+  <!-- ----------------------------------------------------------- -->
+
+  <!-- Mission section -->
+  <div id="Mission" class=" col-5 makeItBlack opacity addPadd">
+
+    <!-- Left side margin -->
+    <div class="col-1"></div>
+    
+    <!-- Description -->
+    <div>
+
+      <h1 class="col-2 textMod">
+          
+          MISSION
+      
+      </h1>
+
+    </div>
+
+    <!-- Right side margin -->
+    <div class="col-1"></div>
+
+    <br><br><br><br>
+
+    <!-- Left side margin -->
+    <div class="col-1"></div>
+
+    <!-- Mission description -->
+    <div class="col-2 textMod">
+
+      <p>
+
+        Gaming is the defining bonding and entertainment experience for people of all ages, races, creeds, and locations. It fosters critical thinking skills, teamwork, and new friendships while strengthening existing ones.
+
+        <br><br>
+
+        Minnesports is Minnesota's first and only official E-Sports league. Our mission is to remain open to the public, unlike other E-Sports organizations which require sponsorships from academia or professional leagues.
+
+        <br><br>
+
+        All people of any age are welcome at our bring-your-own-rig open registration tournaments. Winners of the open registration tournaments are invited to compete in the Annual Cup for a grand prize, trophy, and bragging rights.
+
+        <br><br>
+
+        Open registration tournaments take place twice per year and registration begins two months prior. You'll be required to verify your personal information, sign a simple liability waiver (Your legal guardian can sign for you if you are under 18 years of age), and submit your PC specifications.
+
+        <br><br>
+
+        Click the button below to check registration periods, tournament times, and begin the registration process for the next Minnesports Open Tournament.
+
+      </p>
+
+    </div>
+
+    <!-- Right side margin -->
+    <div class="col-1"></div>
+
+  </div>
+
+  <!-- ----------------------------------------------------------- -->
+
+  <!-- Contact section -->
+  <div id="Contact" class=" col-5 makeItClear opacity addPadd">
+
+    <!-- Left side margin -->
+    <div class="col-1"></div>
+    
+    <!-- Description -->
+    <div>
+
+      <h1 class="col-2 textMod">
+          
+          CONTACT
+      
+      </h1>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="col-1"></div>
+
+    <div class="col-2 textMod">
+
+      <p>
+
+        Please feel free to email us at contact@minnesports.com<br><br>
+        We typically respond within 2 business days or sooner. 
+      
+      </p>
+
+    </div>
+
+    <!-- Right side margin -->
+    <div class="col-1"></div>
+
+  </div>
+
+  <!-- ----------------------------------------------------------- -->
+
+  <!-- Page footer -->
+  <div class=" col-5 makeItBlack addPadd">
+    
+    <!-- Left side margin -->
+    <div class="col-1"></div>
+
+    <!-- Description -->
+    <div class="col-2 textMod">
+
+      <center>
+
+        <p class="moarOpacity">
+          
+          Built by Justin Filip (filip@minnesports.com), Minnesports &#8480 2019
+
+        </p>
+      
+      </center>
+
+    </div>
+
+    <!-- Right side margin -->
+    <div class="col-1"></div>
+
+  </div>
+
+<!-- Donate button -->
+<form class="donateButton" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+    <input type="hidden" name="cmd" value="_donations" />
+    
+    <input type="hidden" name="business" value="GCR3MH9YTSFJC" />
+    
+    <input type="hidden" name="item_name" value="Support local E-Sports" />
+    
+    <input type="hidden" name="currency_code" value="USD" />
+    
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    
+    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+
+</form>
+
+</html>
+

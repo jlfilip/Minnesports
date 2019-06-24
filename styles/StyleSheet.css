@@ -1,0 +1,244 @@
+/*Video background*/
+.fullScreenBackground__video {
+    position: fixed;
+    overflow: hidden;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    opacity: 0.2;
+    padding-top: 0%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+}
+
+@media (max-width: 0px) {
+    .fullScreenBackground__video {
+        display: none;
+    }
+}
+
+/*Background color overlay*/
+.htmlBackground {
+  background-color: #000000;
+}
+
+/*Make the background of element black*/
+.makeItBlack {
+  position: relative;
+  z-index: 10;
+  background-color: black;
+}
+
+/*Make the background of element clear*/
+.makeItClear {
+  position: relative;
+  z-index: 10;
+  background-color: none;
+}
+
+/*Responsive grid*/
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 8px;
+  /*border: 1px solid green;*/ /*enable or disable to show page grid*/
+}
+
+/*Columns*/
+.col-1 {width: 20%;}
+
+.col-2 {width: 60%;}
+
+.col-3 {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.col-4 {
+  width: 10%;
+  height: auto;
+}
+
+.col-5 {width: 100%;}
+
+.col-6 {
+  width: 75px;
+  border-radius: 5px;
+}
+
+/*Logo position and styling*/
+.logo {
+  position: relative;
+  z-index: 10;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 50%;
+  max-width: 50%;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  opacity: 0.8;
+}
+
+/*Motto position and styling*/
+.motto {
+  position: relative;
+  z-index: 10;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 50%;
+  max-width: 50%;
+  padding-bottom: 0%;
+  opacity: 0.8;
+}
+
+/*Make text white, set font, set position*/
+.textMod {
+  font-family: "Sans-serif", Arial, serif;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+}
+
+/*Bring the element to the front*/
+.bringForward {
+  position: relative;
+  z-index: 10;
+}
+
+/*Set opacity*/
+.opacity {
+  opacity: 0.8;
+}
+
+/*Moar opacity*/
+.moarOpacity {
+  opacity: 0.2;
+}
+
+/*Add lots of padding*/
+.addPadd {
+  padding-top:70px;
+  padding-bottom:70px;
+}
+
+/*Add a little padding*/
+.regPadd {
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+/*The navigation bar positioning and styling*/
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  z-index: 9999; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  opacity: 0.8%;
+}
+
+/*Navbar link positioning and styling*/
+.navbar a {
+  font-family: "Sans-serif", Arial, serif;
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+/*Change background of navbar button on mouse-over*/
+.navbar a:hover {
+  background: #FFFFFF;
+  color: black;
+}
+
+/*Button padding for navbar*/
+.btnPad {
+  margin: 5px;
+}
+
+/*ty.html styling*/
+.tycolor {
+  position: relative;
+  z-index: 9999;
+  background-color: none;
+  font-family: "Sans-serif", Arial, serif;
+  color: #FFFFFF;
+  font-size: 40px;
+  padding-top: 10%;
+  opacity: 0.8;
+}
+
+/*Fix to make submit button white on mobile*/
+.btn {
+  font-family: "Sans-serif", Arial, serif;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/*Donate button positioning and styling*/
+.donateButton {
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  float: bottom;
+  padding-right: 2px;
+  padding-top: 2px;
+  opacity: .5;
+}
+
+.chkBoxMargin {
+  margin-left: 15px;
+}
+
+input[type="date"] {
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  height: 25px;
+
+}
+
+input[type="date"]::-webkit-clear-button {
+  font-size: 18px;
+  height: 30px;
+  position: relative;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  height: 28px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: 15px;
+}
+
+.align {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
